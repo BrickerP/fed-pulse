@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fed-pulse"
+version = "0.1.0"
+description = "Turn the latest FOMC minutes and the Treasury yield curve into a plain-English rate-hike-pressure brief and an interactive HTML dashboard."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Yupeng Lu" }]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["fomc", "federal-reserve", "treasury", "yield-curve", "cli", "dashboard"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Topic :: Office/Business :: Financial",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+fed-pulse = "fed_pulse.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/BrickerP/fed-pulse"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fed_pulse"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

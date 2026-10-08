@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.coverage
+.env
+.env.*
+*.key
+# generated dashboards (docs/ screenshot is committed on purpose)
+fed-pulse.html
+/out/
+.DS_Store
