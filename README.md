@@ -90,3 +90,7 @@ delayed or revised; verify anything important at the source.
 ## License
 
 [MIT](LICENSE) © 2026 Yupeng Lu
+
+## Work with me
+
+I build production AI agents and data pipelines, especially for finance and markets. If you need something like this for your team, see [brickerp.github.io/hire](https://brickerp.github.io/hire/).
